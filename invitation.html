@@ -2,12 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="/common.css" rel="stylesheet" type="text/css">
-    <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet" type="text/css">
+    <base href="/invitation/">
+    <link href="common.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>초대장</title>
 </head>
 <body>
 
+    <div id="invitation" class="invitation show">
+        <img id="image2" src="photo/2.png" alt="초대장">
+    </div>
+
+    <script>
+        // 초대장 이미지 클릭 이벤트
+        document.getElementById('image2').addEventListener('click', function() {
+            // 초대장 이미지를 책장을 넘기듯이 숨김
+            this.classList.add('hide');
+
+            // 애니메이션이 끝난 후 새로운 페이지로 이동
+            setTimeout(function() {
+                window.location.href = 'map.html'; // 원하는 페이지의 URL로 변경
+            }, 1000); // 애니메이션 지속 시간(1초) 후 전환
+        });
+    </script>
 </body>
 </html>

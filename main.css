@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;     /* 세로 중앙 정렬 */
+    height: 100vh;           /* 뷰포트 높이 100% */
+    margin: 0;               /* 기본 여백 제거 */
+    background-color: black; /* 배경색을 검정으로 설정 */
+}
+
+img {
+    width: 1500px;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1; /* 시작과 끝에서 불 키기 (불투명도 1) */
+    }
+    10%, 90% {
+        opacity: 0.2; /* 깜박임 (불투명도 0.2) */
+    }
+    20%, 80% {
+        opacity: 0; /* 불 끄기 (불투명도 0) */
+    }
+}
+
+/* 첫번쨰 화면 */
+.button {
+    width: 500px;
+    height: auto;
+    animation: blink 0.5s 3;
+}
+
+
+
