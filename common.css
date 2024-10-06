@@ -44,4 +44,10 @@ img {
     margin: 0 20px; /* 이미지 간의 간격 설정 */
 }
 
+.image3 {
+    width: 800px;
+    height: auto;
+    flex: 1; /* 이미지가 동일하게 공간을 차지하도록 설정 */
+    margin: 0 20px;
+}
 
