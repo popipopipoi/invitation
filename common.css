@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden; /* 스크롤 방지 */
+    font-family: Arial, sans-serif;
 }
 
 /* 돌돌 말리기 애니메이션 */
@@ -42,6 +43,8 @@ img {
     height: auto;
     flex: 1; /* 이미지가 동일하게 공간을 차지하도록 설정 */
     margin: 0 20px; /* 이미지 간의 간격 설정 */
+    cursor: pointer;
+
 }
 
 .image3 {
@@ -49,5 +52,30 @@ img {
     height: auto;
     flex: 1; /* 이미지가 동일하게 공간을 차지하도록 설정 */
     margin: 0 20px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+p:hover {
+    background-color: #ffdd57;
+    transform: scale(1.05);
+}
+
+p::before {
+    content: '←';
+    margin-right: 8px;
+    font-size: 22px;
+    color: #ff6f61;
+    vertical-align: middle;
 }
 
