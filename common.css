@@ -1,5 +1,5 @@
 /* 배경 색상 기본 흰색 */
-body {
+/* body {
     background-color: white;
     margin: 0;
     height: 100vh;
@@ -8,7 +8,17 @@ body {
     align-items: center;
     overflow: hidden; /* 스크롤 방지 */
     font-family: Arial, sans-serif;
+} */
+
+body {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;     /* 세로 중앙 정렬 */
+    height: 100vh;           /* 뷰포트 높이 100% */
+    margin: 0;               /* 기본 여백 제거 */
+    background-color: white; /* 배경색을 검정으로 설정 */
 }
+
 
 /* 돌돌 말리기 애니메이션 */
 @keyframes roll-up {
@@ -39,8 +49,8 @@ body {
 
 /* 이미지 스타일 */
 img {
-    width: auto;
-    height: 50%;
+    width: 880px;
+    height: auto;
     cursor: pointer;
 }
 
