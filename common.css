@@ -39,12 +39,9 @@ body {
 
 /* 이미지 스타일 */
 img {
-    width: 50%;
-    height: auto;
-    flex: 1; /* 이미지가 동일하게 공간을 차지하도록 설정 */
-    margin: 0 20px; /* 이미지 간의 간격 설정 */
+    width: auto;
+    height: 50%;
     cursor: pointer;
-
 }
 
 
